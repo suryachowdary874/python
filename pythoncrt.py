@@ -1,0 +1,44 @@
+"""#Puzzle
+legs=int(input("Enter number of legs: "))
+heads=int(input("Enter number of heads: "))
+
+flag=False
+for cows in range(0,heads+1):
+    hens=heads-cows
+    cal_legs=cows*2 + hens*2
+    if cal_legs==legs:
+        flag=True
+        break
+if flag:
+    print("cows: ",cows)
+    print("hen: ",hens)
+else:
+    print("no solution")"""
+
+"""from datetime import date
+a=date(2005,12,15)
+b=date(2026,4,28)
+print("No of days lived: ",(b-a).total_seconds()/3600)"""
+
+"""import calendar
+# Taking year and month input from user
+year = int(input("Enter year: "))
+month = int(input("Enter month (1-12): "))
+# Display the calendar
+print("\n", calendar.month(year, month))"""
+
+"""a=2
+for i in range(2,5):
+    a=a+2
+    for j in range(4):
+        a=a+3
+    print(a)"""
+
+
+for i in range(100,1000):
+    c=0
+    for j in range(2,i):
+        if i%j==0:
+            c=c+1
+    if c==0:
+        print(i,end=" ")
