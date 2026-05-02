@@ -1,0 +1,62 @@
+------------------FUNCTIONS-----------
+---------MENU DRIVEN PROGRAM OF SHAPES---------
+def square():
+    s=int(input("Enter side: "))
+    print("Area: ",s*s)
+def rectangle(l,b):
+    print("Area: ",l*b)
+def circle():
+    r=int(input("Enter Radius: "))
+    return 3.14*r*r
+def triangle(b,h):
+    return 0.5 * b * h
+while True:
+    print("\n--Shape features Generator--\n")
+    print("1.Square")
+    print("2.Rectangle")
+    print("3.Circle")
+    print("4.Triangle")
+    print("5.EXIT")
+    ch=int(input("Enter your choice: "))
+    if ch==1:
+        square()
+    elif ch==2:
+        l=int(input("Enter Length: "))
+        b=int(input("Entre the base: "))
+        rectangle(l,b)
+    elif ch==3:
+        x=circle()
+        print("Area: ".x)
+    elif ch==4:
+        b=int(input("Enter base: "))
+        h=int(input("Enter height: "))
+        y=triangle(b,h)
+        print("Area:", y)
+    else:
+        break
+
+
+#-----------3D PRIME NUMBER WITH FUNCTIONS-----------
+def prime(n):
+    if n<=1:
+        return False
+    else:
+        for i in range(2,n):
+            if n%i==0:
+                return False
+        return True
+def sod(n):
+    d=[int(i) for i in str(n)]
+    return sum(d)
+
+def every(n):
+    for i in range(3):
+        d=n%10
+        n=n//10
+        if not prime(d):
+            return False
+    return True   
+
+for i in range(100,1000):
+    if(prime(i) and prime(sod(i)) and every(i)):
+        print(i, end=" ")
