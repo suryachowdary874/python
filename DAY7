@@ -1,1 +1,38 @@
+maths=["Raj","Anu","Kiran","Bala","Pavi"]
+social=["usha","Raj","Suresh","Pavi","Ravi"]
+poltical=["Raj","Pavi","karthik","Anu","Bala"]
+m=set(maths)
+p=set(poltical)
+s=set(social)
+#3 subjects
+one=list(m&p&s)
+print(one)
+#2 subject
+a=(m&p)
+b=(p&s)
+c=(s&m)
+two=(a|b|c)-(m&p&s)
+print(list(two))
 
+
+x=30
+y=10
+z=5
+time=0
+ht=0
+i=1
+while(ht<x):
+    if i%2==1:
+        ht=ht+y
+        time=time+1
+    else:
+        ht=ht-z
+        time=time+1
+    i=i+1
+print(time)
+
+a=2024
+if (a%400==0) or (a%4==0 and a%100!=0):
+    print("yes")
+else:
+    print("no")
