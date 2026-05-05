@@ -1,0 +1,52 @@
+#-----------Prime Factorization---------------
+a=int(input("Enter a Value: "))
+def Varsha(a):
+    if a == 1:
+        return
+    i=2 
+    while(a%i !=0):
+        i=i+1
+    print(i,end=" ")
+    Varsha(a/i)
+Varsha(a)
+#----------Use Of Constructor of shapes----------
+-----------square----------
+class Square:
+    def __init__(self,a):
+        self.area=a*a
+    def display(self):
+        print("Area of Square",self.area)
+
+s=Square(40)
+s2=Square(4)
+s.display()
+s2.display()
+
+---------rectangle---------
+class rect:
+    def __init__(self,a,b):
+        self.area=a*b
+    def display(self):
+        print("Area of rectangle",self.area)
+
+r=rect(40,60)
+r2=rect(7,5)
+r.display()
+r2.display()
+
+
+-------circle area with list------
+class circle():
+    def __init__(self):
+        rad=int(input("Enter Radius Value"))
+        self.r=rad
+    def display(self):
+        print("Area of Circle:",3.14*self.r**2)
+
+a=int(input("Enter number of circle: "))
+list=[]
+for i in range(a):
+    c=circle()
+    list.append(c)
+    c.display()
+    print("-----------------------------------------------")
