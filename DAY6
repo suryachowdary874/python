@@ -1,4 +1,4 @@
-------------------FUNCTIONS-----------
+------------------FUNCTIONS------------
 ---------MENU DRIVEN PROGRAM OF SHAPES---------
 def square():
     s=int(input("Enter side: "))
