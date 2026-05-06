@@ -1,0 +1,48 @@
+----------Precedence-----------
+print(2*4/2+7-3*2)
+
+
+def abc(X):
+    return len(X)+2
+def hi(b):
+    return b*2
+for i in range(abc('Akash')):
+    print(hi('hi'))
+    
+a=234
+b=[str(i) for i in str(a)]
+print(b)
+
+a=33333222267
+b={}
+for i in str(a):
+    if i not in b:
+        b[i]=1
+    else:
+        b[i]+=1
+print(b)
+
+b={'A':2,'B':7,'C':9}
+a1=[i for i in b.keys()]
+a2=[i[1] for i in b.items() if i[1]>=2]
+print(a1)
+print(a2)
+
+def sum(*args):#infinite args
+    total=0
+    for i in args:
+        total+=i
+    print(total)
+    
+sum(1,2,3,4,5,654,2,2)
+
+
+def ace(name='Akshay'):
+    print("Good Morning",name)
+
+ace()
+
+def a(**kwargs):
+    print(kwargs)
+    
+a(Name='Gill',Score=40)
